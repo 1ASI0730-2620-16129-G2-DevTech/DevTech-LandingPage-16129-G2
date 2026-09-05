@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/FITHER-main/img"
+		},
+		{
+			"path": "../Desktop/FITHER-main/Documentos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DevTech-LandingPage-16129-G2"
+	}
+}
