@@ -603,71 +603,72 @@ button[type="submit"]:hover {
 
 
 
-
-@media (max-width: 800px) {
-
-    .Menu-Horizontal {
-        display: none;
-    }
-
-    .div-gral-bca {
-        flex-direction: column;
-    }
-
-    .div-prod-texto {
-        width: 100%;
-    }
-
-    .div-prod-img {
-        width: 100%;
-    }
-
-    .tracking-demo {
-        width: 100%;
-    }
-
-    .vip-card {
-        width: 100%;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
 @media (max-width: 500px) {
 
+
+
     .topheader {
+
         padding: 5px 15px;
+
     }
+
+
 
     .seccion-productos,
+
     .seccion-banca,
+
     .seccion-seguimiento,
+
     .seccion-vip,
+
     .seccion-formulario {
+
         padding-left: 15px;
 
+
+
         padding-right: 15px;
+
     }
+
+
 
     .div-prod-texto h2 {
+
         font-size: 30px;
+
     }
+
+
 
     .div-prod-img {
+
         flex-direction: column;
 
+
+
         align-items: center;
+
     }
+
+
 
     .div-prod-img img {
+
         max-width: 280px;
+
     }
 
+
+
     .footer-container {
+
         grid-template-columns: 1fr;
+
     }
+
+
 
 }
