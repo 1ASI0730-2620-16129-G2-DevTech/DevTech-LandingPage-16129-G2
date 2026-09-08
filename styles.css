@@ -41,10 +41,7 @@ body {
     object-fit: contain;
 }
 
-/* Envuelve enlaces + selector de idioma + CTA.
-   En desktop se "desarma" con display:contents para que sus hijos
-   se vuelvan ítems directos del flex del header (logo | enlaces | acciones).
-   En móvil vuelve a ser el panel que despliega el botón hamburguesa. */
+
 .nav-collapse {
     display: contents;
 }
@@ -306,8 +303,6 @@ body {
 }
 
 
-/* STATS DEL HERO */
-
 .hero-stats {
     display: flex;
     flex-wrap: wrap;
@@ -344,8 +339,6 @@ body {
     color: #64748B;
 }
 
-
-/* VISUAL DEL HERO: mockup del panel WashTrack */
 
 .hero-visual {
     flex: 1;
