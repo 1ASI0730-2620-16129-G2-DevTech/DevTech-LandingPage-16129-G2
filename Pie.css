@@ -1,12 +1,11 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
+  background-color: #222; 
   color: white;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
 }
 
-/* Contenedor flexible para 3 columnas */
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -17,7 +16,6 @@
   gap: 2rem;
 }
 
-/* Marca o logotipo */
 .footer-brand {
   flex: 1;
   min-width: 200px;

@@ -9,6 +9,10 @@
 
     <title>WashTrack</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&display=swap" />
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Pie.css" />
     <link rel="stylesheet" href="menu_toggle.css" />
@@ -19,39 +23,50 @@
 
     <nav class="topheader">
 
-        <a href="" class="logo">
-            <!-- DEJA TU LOGO COMO logo1.png -->
-            <img height="90" width="90" src="img/logo1.png" alt="Logo WashTrack" />
+        <a href="#inicio" class="logo">
+            <img height="48" src="img/logo1.png" alt="Logo WashTrack" />
         </a>
 
         <!-- BOTÓN HAMBURGUESA -->
 
-        <button class="menu-toggle" aria-label="Abrir menú">
+        <button class="menu-toggle" aria-label="Abrir menú" data-en-aria-label="Open menu" aria-expanded="false">
             &#9776;
         </button>
 
-        <ul class="Menu-Horizontal">
+        <div class="nav-collapse">
 
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
+            <ul class="Menu-Horizontal">
 
-            <li>
-                <a href="#servicios">Servicios</a>
+                <li>
+                    <a href="#caracteristicas">Características</a>
+                </li>
 
-            <li>
-                <a href="#seguimiento">Seguimiento</a>
-            </li>
+                <li>
+                    <a href="#sobre-nosotros">Sobre nosotros</a>
+                </li>
 
-            <li>
-                <a href="#suscripcion">Suscripción</a>
-            </li>
+                <li>
+                    <a href="#para-quien">Para quién</a>
+                </li>
 
-            <li>
-                <a href="#contacto">Contáctanos</a>
-            </li>
+                <li>
+                    <a href="#planes">Planes</a>
+                </li>
 
-        </ul>
+            </ul>
+
+            <div class="nav-actions">
+
+                <div class="lang-switch" role="group" aria-label="Seleccionar idioma" data-en-aria-label="Select language">
+                    <button type="button" class="lang-option" data-lang="en">EN</button>
+                    <button type="button" class="lang-option active" data-lang="es" aria-pressed="true">ES</button>
+                </div>
+
+                <a href="#contacto" class="btn-cta-header">Comenzar ahora</a>
+
+            </div>
+
+        </div>
 
     </nav>
 
@@ -62,39 +77,90 @@
 
             <div class="div-prod-texto">
 
-                <h2>
-                    Tu ropa, lista en menos tiempo
+                <p class="eyebrow"><span class="dot"></span><span>Pedidos · Seguimiento en vivo · Monitoreo IoT · Pagos</span></p>
+
+                <h2 class="display-heading">
+                    <span>Tu lavandería, bajo control.</span><br><em>En tiempo real.</em>
                 </h2>
 
-                <p>
-                    En WashTrack hacemos que gestionar tu ropa sea más
-                    fácil, rápido y seguro. Nuestra aplicación web te
-                    permite solicitar servicios de lavandería, indicar
-                    cuidados especiales y elegir entre recolección o
-                    atención en sucursal.
-                </p>
+                <p>WashTrack conecta pedidos, sensores IoT y pagos en una sola plataforma — con alertas automáticas, seguimiento en vivo y control total de tu operación.</p>
 
-                <p>
-                    Desde la comodidad de tu hogar puedes registrar tu
-                    pedido y conocer en qué etapa se encuentra tu ropa.
-                    WashTrack digitaliza todo el proceso para que puedas
-                    realizar el seguimiento de tus prendas en tiempo real.
-                </p>
+                <div class="hero-cta-row">
+                    <a href="#contacto" class="btn-primario"><span>Comenzar ahora</span> <span class="arrow">→</span></a>
+                    <a href="#caracteristicas" class="btn-secundario">Ver características</a>
+                </div>
 
-                <p>
-                    Además, si cuentas con una membresía Wash VIP, tu
-                    pedido obtiene prioridad automáticamente dentro del
-                    flujo de trabajo de la lavandería.
-                </p>
+                <div class="hero-stats">
+
+                    <div class="stat-item">
+                        <strong>6</strong>
+                        <span>Etapas de tu pedido, visibles en tiempo real</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <strong>24/7</strong>
+                        <span>Monitoreo IoT de tus lavadoras, sin pausas</span>
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="div-prod-img">
+            <div class="hero-visual">
 
-                <img src="img/imagenlavanderia1.jpg" alt="Servicio de lavandería">
+              <div class="dashboard-wrap">
 
-                <img src="img/img2.jpg" alt="Lavandería WashTrack">
+                <div class="dashboard-card">
+
+                    <div class="dashboard-head">
+                        <h4>Panel · Hoy</h4>
+                        <span class="badge-online"><span class="dot"></span><span>En línea</span></span>
+                    </div>
+
+                    <div class="dashboard-stats">
+
+                        <div class="dashboard-stat">
+                            <span class="ds-label">Pedidos</span>
+                            <strong>48</strong>
+                            <span class="ds-delta up">↑ 18% vs ayer</span>
+                        </div>
+
+                        <div class="dashboard-stat accent-green">
+                            <span class="ds-label">Entregados</span>
+                            <strong>36</strong>
+                            <span class="ds-delta">Hoy</span>
+                        </div>
+
+                        <div class="dashboard-stat accent-red">
+                            <span class="ds-label">Alertas IoT</span>
+                            <strong>2</strong>
+                            <span class="ds-delta">Revisar</span>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-chart">
+                        <span class="dc-label">Pedidos por hora</span>
+                        <div class="dc-bars">
+                            <span style="--h:38%"></span>
+                            <span style="--h:52%"></span>
+                            <span style="--h:34%"></span>
+                            <span class="peak" style="--h:78%"></span>
+                            <span class="peak" style="--h:94%"></span>
+                            <span style="--h:60%"></span>
+                            <span style="--h:44%"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="dashboard-toast">
+                    <span class="dot"></span>
+                    <span>Alerta: Lavadora 3 cerca del límite de uso</span>
+                </div>
+
+              </div>
 
             </div>
 
@@ -103,36 +169,104 @@
     </section>
 
 
-    <section id="servicios" class="seccion-banca">
+    <section id="problema" class="seccion-problema">
 
-        <div class="div-gral-bca">
+        <div class="problema-cabecera">
+            <p class="eyebrow"><span class="dot"></span><span>Problema / Solución</span></p>
+            <h2 class="display-heading"><span>El problema no es lavar la ropa.</span><br><em>Es todo lo demás.</em></h2>
+        </div>
+
+        <div class="problema-tabla">
+
+            <div class="problema-fila">
+                <div class="problema-col problema">
+                    <span class="tag-hoy">Hoy</span>
+                    <p>Cuadernos, mensajes sueltos y prendas que se pierden en el camino.</p>
+                </div>
+                <div class="problema-col solucion">
+                    <span class="tag-solucion">Con WashTrack</span>
+                    <p>Gestión integral de pedidos y prendas: clientes, órdenes y entregas en un solo panel.</p>
+                </div>
+            </div>
+
+            <div class="problema-fila">
+                <div class="problema-col problema">
+                    <span class="tag-hoy">Hoy</span>
+                    <p>El cliente pierde tiempo trasladándose solo para preguntar "¿cómo va mi ropa?".</p>
+                </div>
+                <div class="problema-col solucion">
+                    <span class="tag-solucion">Con WashTrack</span>
+                    <p>Seguimiento en tiempo real: el estado del pedido, siempre a un tap de distancia.</p>
+                </div>
+            </div>
+
+            <div class="problema-fila">
+                <div class="problema-col problema">
+                    <span class="tag-hoy">Hoy</span>
+                    <p>Incertidumbre para el cliente y el teléfono saturado de llamadas para el negocio.</p>
+                </div>
+                <div class="problema-col solucion">
+                    <span class="tag-solucion">Con WashTrack</span>
+                    <p>Un canal digital claro reemplaza las llamadas: notificaciones automáticas de cada etapa.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="problema-cta">
+            <a href="#contacto" class="btn-primario"><span>Quiero ordenar mi lavandería</span> <span class="arrow">→</span></a>
+        </div>
+
+    </section>
+
+
+    <section id="caracteristicas" class="seccion-caracteristicas">
+
+        <div class="caracteristicas-cabecera">
+            <p class="eyebrow"><span class="dot"></span><span>Características</span></p>
+            <h2 class="display-heading"><span>Todo lo que tu lavandería necesita,</span><br><em>en un solo lugar</em></h2>
+        </div>
+
+        <div class="caracteristicas-grid">
+
+            <div class="caracteristica-card">
+                <h3>Gestión integral de pedidos</h3>
+                <p>Clientes, órdenes y entregas centralizados. Sin errores de transcripción ni papeles sueltos.</p>
+            </div>
+
+            <div class="caracteristica-card">
+                <h3>Seguimiento en tiempo real</h3>
+                <p>Tus clientes consultan el estado de su ropa desde el celular, sin llamar ni escribir.</p>
+            </div>
+
+            <div class="caracteristica-card">
+                <h3>Monitoreo IoT predictivo</h3>
+                <p>Sensores en tus lavadoras anticipan fallas y avisan cuándo un equipo llega al fin de su vida útil.</p>
+            </div>
+
+            <div class="caracteristica-card">
+                <h3>Logística y pagos</h3>
+                <p>Recojo y entrega a domicilio, con pagos digitales integrados de principio a fin.</p>
+            </div>
+
+        </div>
+
+
+        <div class="div-gral-bca caracteristicas-demo">
 
             <div class="div-prod-texto">
 
-                <h2>
-                    Servicios de WashTrack
-                </h2>
+                <h3>
+                    Así funciona WashTrack
+                </h3>
 
                 <p>
-                    WashTrack permite gestionar todo el proceso de
-                    lavandería desde una sola plataforma. El cliente
-                    puede crear una solicitud indicando el tipo de
-                    prendas, notas de cuidado especial y modalidad
-                    de entrega.
-                </p>
-
-                <p>
-                    La lavandería recibe automáticamente la orden y
-                    puede organizarla dentro de su flujo de producción:
-                    recepción, clasificación, lavado, secado o
-                    planchado, empaquetado y finalmente listo para
-                    entregar.
-                </p>
-
-                <p>
-                    El sistema también permite administrar clientes,
-                    pedidos, créditos y suscripciones, reduciendo la
-                    necesidad de realizar procesos manuales.
+                    El cliente crea su solicitud indicando el tipo de
+                    prendas, notas de cuidado especial y modalidad de
+                    entrega. La lavandería recibe la orden y la organiza
+                    dentro de su flujo de producción: recepción,
+                    clasificación, lavado, secado o planchado, empaquetado
+                    y listo para entregar.
                 </p>
 
             </div>
@@ -146,35 +280,21 @@
 
         </div>
 
-    </section>
 
-
-
-    <section id="seguimiento" class="seccion-seguimiento">
-
-        <div class="div-gral-bca">
+        <div class="div-gral-bca caracteristicas-demo">
 
             <div class="div-prod-texto">
 
-                <h2>
-                    Seguimiento en tiempo real
-                </h2>
+                <h3>
+                    Seguimiento en tiempo real, en acción
+                </h3>
 
                 <p>
                     Con WashTrack puedes conocer el estado exacto de
                     tu ropa sin necesidad de llamar a la lavandería.
-                </p>
-
-                <p>
-                    Tu pedido avanza por diferentes etapas dentro del
-                    sistema: recepción, clasificación, lavado,
-                    secado o planchado, empaquetado y listo.
-                </p>
-
-                <p>
                     Cada cambio de estado se actualiza en la plataforma
-                    y el cliente puede recibir notificaciones automáticas
-                    sobre el avance de su pedido.
+                    y el cliente recibe notificaciones automáticas sobre
+                    el avance de su pedido.
                 </p>
 
             </div>
@@ -242,60 +362,119 @@
 
 
 
-    <section id="suscripcion" class="seccion-vip">
+    <section id="para-quien" class="seccion-para-quien">
+
+        <div class="para-quien-cabecera">
+            <p class="eyebrow"><span class="dot"></span><span>Para quién</span></p>
+            <h2 class="display-heading"><span>Hecho para dos lados</span><br><em>de la misma lavandería</em></h2>
+        </div>
+
+        <div class="quien-grid">
+
+            <div class="quien-card">
+                <img class="quien-img" src="img/imagenlavanderia1.jpg" alt="Personal de lavandería organizando pedidos" />
+                <div class="quien-card-body">
+                    <span class="tag-solucion">Dueños de lavandería</span>
+                    <h3>Digitaliza tu negocio sin complicarte</h3>
+                    <p>Centraliza pedidos, reduce errores de registro manual y recupera el control operativo total de tu lavandería.</p>
+                    <a href="#contacto" class="btn-secundario">Quiero digitalizar mi lavandería</a>
+                </div>
+            </div>
+
+            <div class="quien-card">
+                <img class="quien-img" src="img/img2.jpg" alt="Cliente llevando su cesta de ropa a la lavandería" />
+                <div class="quien-card-body">
+                    <span class="tag-solucion">Clientes finales</span>
+                    <h3>Sin tiempo, sin lavadora, sin problema</h3>
+                    <p>Pide, rastrea, paga y coordina tu delivery desde el celular, sin salir de casa.</p>
+                    <a href="#contacto" class="btn-secundario">Quiero lavar sin complicaciones</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="sobre-nosotros" class="seccion-nosotros">
 
         <div class="div-gral-bca">
 
             <div class="div-prod-texto">
 
-                <h2>
-                    Wash VIP
+                <p class="eyebrow"><span class="dot"></span><span>Sobre nosotros</span></p>
+
+                <h2 class="display-heading">
+                    <span>Somos</span> <em>DevTech</em>
                 </h2>
 
                 <p>
-                    La membresía Wash VIP permite que los usuarios
-                    activos obtengan beneficios especiales al solicitar
-                    un servicio de lavandería.
+                    Un equipo de estudiantes de la UPC construyendo
+                    tecnología para negocios reales. Creemos que la
+                    transformación digital no debería ser un privilegio
+                    de las grandes empresas — por eso creamos WashTrack:
+                    la puerta de entrada de los negocios tradicionales de
+                    Latinoamérica a la gestión digital, empezando por las
+                    lavanderías.
                 </p>
 
-                <p>
-                    Cuando un cliente VIP genera una orden, el sistema
-                    identifica automáticamente su membresía y coloca
-                    el pedido en el carril prioritario del tablero
-                    interno de la lavandería.
-                </p>
-
-                <p>
-                    Además, WashTrack genera alertas para el equipo
-                    operativo cuando un pedido VIP se aproxima a su
-                    tiempo límite de entrega.
-                </p>
+                <a href="#contacto" class="btn-secundario">Conoce más sobre DevTech</a>
 
             </div>
 
 
-            <div class="vip-card">
+            <div class="valores-grid">
 
-                <div class="vip-icon">
-                    ★
+                <div class="valor-chip">
+                    <strong>Innovación</strong>
+                    <span>Resolver con tecnología, no con más papel</span>
                 </div>
 
-                <h3>
-                    WASH VIP
-                </h3>
+                <div class="valor-chip">
+                    <strong>Compromiso</strong>
+                    <span>Con cada lavandería que confía en nosotros</span>
+                </div>
 
-                <p>
-                    Tu ropa recibe atención prioritaria.
-                </p>
+                <div class="valor-chip">
+                    <strong>Accesibilidad</strong>
+                    <span>Digitalización al alcance de negocios pequeños</span>
+                </div>
 
-                <ul>
-                    <li>✓ Prioridad automática</li>
-                    <li>✓ Procesamiento preferencial</li>
-                    <li>✓ Notificaciones inteligentes</li>
-                    <li>✓ Créditos y descuentos</li>
-                </ul>
+                <div class="valor-chip">
+                    <strong>Transparencia</strong>
+                    <span>Estado real del pedido, sin letra chica</span>
+                </div>
+
+                <div class="valor-chip">
+                    <strong>Eficiencia</strong>
+                    <span>Menos pasos manuales, menos errores</span>
+                </div>
+
+                <div class="valor-chip">
+                    <strong>Calidad</strong>
+                    <span>Construido y probado por su propio equipo</span>
+                </div>
 
             </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="planes" class="seccion-planes">
+
+        <div class="planes-card">
+
+            <p class="eyebrow"><span class="dot"></span><span>Planes</span></p>
+            <h2 class="display-heading"><span>Un plan para cada tamaño</span><br><em>de lavandería</em></h2>
+            <p>
+                Estamos definiendo los planes de WashTrack junto a las
+                primeras lavanderías que se suman. Escríbenos y te
+                contamos las opciones disponibles para tu negocio.
+            </p>
+
+            <a href="#contacto" class="btn-primario"><span>Contáctanos</span> <span class="arrow">→</span></a>
 
         </div>
 
@@ -332,6 +511,7 @@
                         id="nombre"
                         name="nombre"
                         placeholder="Ingrese su nombre"
+                        data-en-placeholder="Enter your name"
                     />
 
                 </div>
@@ -350,6 +530,7 @@
                         id="correo"
                         name="correo"
                         placeholder="Ingrese su correo"
+                        data-en-placeholder="Enter your email"
                     />
 
                 </div>
@@ -399,7 +580,7 @@
                                     name="intereses"
                                     value="lavado"
                                 />
-                                Servicio de lavado
+                                <span>Servicio de lavado</span>
                             </label>
                         </li>
 
@@ -410,7 +591,7 @@
                                     name="intereses"
                                     value="entrega"
                                 />
-                                Entrega
+                                <span>Entrega</span>
                             </label>
                         </li>
 
@@ -421,17 +602,18 @@
                                     name="intereses"
                                     value="vip"
                                 />
-                                Membresía Wash VIP
+                                <span>Membresía Wash VIP</span>
                             </label>
                         </li>
-                                                <li>
+
+                        <li>
                             <label>
                                 <input
                                     type="checkbox"
                                     name="intereses"
-                                    value="vip"
+                                    value="otro"
                                 />
-                                Otro 
+                                <span>Otro</span>
                             </label>
                         </li>
 
@@ -439,8 +621,6 @@
 
                 </div>
 
-
-                <!-- MENSAJE -->
 
                 <div class="campo">
 
@@ -453,6 +633,7 @@
                         name="mensaje"
                         rows="4"
                         placeholder="Escriba su consulta..."
+                        data-en-placeholder="Write your inquiry..."
                     ></textarea>
 
                 </div>
@@ -468,10 +649,6 @@
 
     </section>
 
-
-    <!-- =====================================
-         PIE DE PÁGINA
-    ====================================== -->
 
     <section id="footer">
 
@@ -494,7 +671,7 @@
                     </p>
 
                     <small>
-                        Tu ropa, lista en menos tiempo
+                        Lavanderías organizadas. Clientes tranquilos.
                     </small>
 
                     <br>
@@ -514,20 +691,24 @@
                         WashTrack
                     </h4>
 
-                    <a href="#inicio">
-                        Inicio
+                    <a href="#caracteristicas">
+                        Características
                     </a>
 
-                    <a href="#servicios">
-                        Servicios
+                    <a href="#sobre-nosotros">
+                        Sobre nosotros
                     </a>
 
-                    <a href="#seguimiento">
-                        Seguimiento
+                    <a href="#para-quien">
+                        Para quién
                     </a>
 
-                    <a href="#suscripcion">
-                        Wash VIP
+                    <a href="#planes">
+                        Planes
+                    </a>
+
+                    <a href="#contacto">
+                        Contáctanos
                     </a>
 
                 </div>
@@ -541,15 +722,15 @@
                         Legal
                     </h4>
 
-                    <a href="Documentos/LeyProteccionDatos.pdf" target="_blank" rel="noopener noreferrer">
-    Política de Privacidad
-</a>
+                    <a href="Documentos/LeyProteccionDatos.pdf">
+                        Política de Privacidad
+                    </a>
 
-                    <a href="#">
+                    <a href="Documentos/LeyProteccionDatos.pdf">
                         Términos y Condiciones
                     </a>
 
-                    <a href="#">
+                    <a href="Documentos/LeyProteccionDatos.pdf">
                         Protección de Datos
                     </a>
 
