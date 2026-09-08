@@ -1,10 +1,11 @@
 /* Footer general */
 .footer {
-  background-color: #222; 
+  background-color: #222; /* Fondo oscuro para contraste */
   color: white;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
 }
+
 
 .footer-container {
   display: flex;
@@ -16,6 +17,7 @@
   gap: 2rem;
 }
 
+/* Marca o logotipo */
 .footer-brand {
   flex: 1;
   min-width: 200px;
