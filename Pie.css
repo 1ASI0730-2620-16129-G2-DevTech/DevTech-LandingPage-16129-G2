@@ -6,7 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Contenedor flexible para 3 columnas */
+
 .footer-container {
   display: flex;
   flex-direction: row;
