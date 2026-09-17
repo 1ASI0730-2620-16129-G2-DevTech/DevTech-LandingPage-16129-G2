@@ -1,0 +1,69 @@
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #123B7A;
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 800px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+  }
+
+  /* Panel que despliega el hamburguesa: enlaces + idioma + CTA */
+  .nav-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+    background-color: white;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 20px;
+
+    box-shadow: 0 10px 24px rgba(18, 59, 122, 0.14);
+  }
+
+  .nav-collapse.active {
+    display: flex;
+  }
+
+  .Menu-Horizontal {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #EEF3F8;
+  }
+
+  .Menu-Horizontal li a {
+    padding: 14px 4px;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+
+    margin-top: 20px;
+  }
+
+  .nav-actions .lang-switch {
+    align-self: center;
+  }
+
+  .nav-actions .btn-cta-header {
+    text-align: center;
+  }
+}
