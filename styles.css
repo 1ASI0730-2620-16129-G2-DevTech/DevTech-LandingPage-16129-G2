@@ -1289,3 +1289,28 @@ button[type="submit"]:hover {
     }
 
 }
+
+/* Fuerza una nueva fila que ocupe el 100% del ancho y centre su contenido */
+.devtech-video-fila {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* Separación con el botón y las tarjetas superiores */
+    clear: both;
+}
+
+/* Controla el tamaño del reproductor y mantiene la proporción 16:9 */
+.devtech-video-wrapper {
+    width: 100%;
+    max-width: 680px; /* Puedes ajustar este tamaño si quieres el vídeo más grande o pequeño */
+    aspect-ratio: 16 / 9;
+}
+
+.devtech-video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
