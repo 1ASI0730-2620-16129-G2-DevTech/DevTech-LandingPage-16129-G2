@@ -1,9 +1,9 @@
 /* Footer general */
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
+  background-color: #0B192C; /* Primary dark (Style Guide) */
   color: white;
-  padding: 2rem 1rem;
-  font-family: "Roboto", sans-serif;
+  padding: 2.5rem 1rem 2rem;
+  font-family: inherit;
 }
 
 
@@ -17,7 +17,7 @@
   gap: 2rem;
 }
 
-/* Marca o logotipo */
+/* Brand / logo */
 .footer-brand {
   flex: 1;
   min-width: 200px;
@@ -29,7 +29,7 @@
   margin-bottom: 0.5rem;
 }
 
-/* Enlaces legales */
+/* Navigation and legal links */
 .footer-links {
   flex: 1;
   min-width: 200px;
@@ -46,24 +46,13 @@
   color: #fff;
 }
 
-/* Redes sociales con íconos */
+/* Social links */
 .footer-social {
   flex: 1;
   min-width: 200px;
 }
 
-.social-icon {
-  width: 32px;
-  height: 32px;
-  margin-right: 0.5rem;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-}
-
-/* Responsive para pantallas pequeñas */
+/* Responsive for small screens */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -71,7 +60,7 @@
     text-align: center;
   }
 
-  .footer-social img {
-    margin-bottom: 0.5rem;
+  .footer-social a {
+    justify-content: center;
   }
 }
