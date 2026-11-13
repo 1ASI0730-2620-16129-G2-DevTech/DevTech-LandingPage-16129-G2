@@ -1,26 +1,48 @@
-/* BOTÓN HAMBURGUESA */
+/* Main navigation takes the free space between the logo and the actions */
+.nav-collapse > nav {
+  flex: 1;
+}
+
+/* HAMBURGER BUTTON */
 .menu-toggle {
   display: none;
-  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
   background: none;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   color: #123B7A;
 }
 
-/* RESPONSIVE: MÓVILES */
-@media (max-width: 800px) {
+.menu-toggle .material-symbols-outlined {
+  font-size: 30px;
+}
+
+.menu-toggle:hover {
+  background-color: #EAF8FF;
+}
+
+/* RESPONSIVE: TABLETS AND PHONES */
+@media (max-width: 1100px) {
   .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa en móviles */
+    display: inline-flex; /* Show hamburger button */
   }
 
-  /* Panel que despliega el hamburguesa: enlaces + idioma + CTA */
+  /* Panel opened by the hamburger: links + language + CTAs */
   .nav-collapse {
     display: none;
     flex-direction: column;
     align-items: stretch;
 
     width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+
     background-color: white;
 
     position: absolute;
@@ -34,6 +56,10 @@
 
   .nav-collapse.active {
     display: flex;
+  }
+
+  .nav-collapse > nav {
+    width: 100%;
   }
 
   .Menu-Horizontal {
@@ -54,7 +80,7 @@
   .nav-actions {
     flex-direction: column;
     align-items: stretch;
-    gap: 16px;
+    gap: 12px;
 
     margin-top: 20px;
   }
@@ -63,7 +89,8 @@
     align-self: center;
   }
 
-  .nav-actions .btn-cta-header {
+  .nav-actions .btn-cta-header,
+  .nav-actions .btn-login-header {
     text-align: center;
   }
 }
